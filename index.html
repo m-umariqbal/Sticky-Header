@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sticky Header</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <nav id="navbar">
+            <img src="images/logo.png" class="logo">
+            <ul id="menu">
+                <li>Home</li>
+                <li>About</li>
+                <li>Services</li>
+                <li>Products</li>
+                <li>Contact Us</li>
+            </ul>
+        </nav>
+    </div>
+    <p class="text">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat dignissimos esse voluptatibus modi provident tenetur, voluptates ipsum quidem accusamus eveniet possimus assumenda sed quisquam a amet qui in minima iste consectetur, quibusdam perferendis recusandae corrupti est. Voluptatibus labore numquam odio perspiciatis cumque neque ratione esse quidem, illo dignissimos doloremque debitis nulla minus perferendis distinctio repellat non sint dolorem fuga at! Fuga sequi tempore numquam incidunt, enim id. Ea, dolorum expedita!
+    </p>
+    <p class="text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae maiores veniam, quasi fugiat autem, nostrum aperiam quo consequatur error aliquid itaque obcaecati! Consectetur temporibus sit ipsa fugit, facilis eos, officia distinctio explicabo a rerum, recusandae provident alias! Deleniti repellendus expedita optio laborum dignissimos quo exercitationem id repudiandae quis dolorum accusamus, odio voluptate cum, eligendi quam dolor consequatur. Voluptatem, culpa ratione tenetur explicabo similique laborum saepe officia, sequi fuga magni nisi.</p>
+
+    <script>
+        var navbar = document.getElementById('navbar');
+        var menu = document.getElementById('menu');
+
+        window.onscroll = function(){
+            if(window.pageYOffset >= menu.offsetTop){
+                navbar.classList.add("sticky");
+            }
+            else{
+                navbar.classList.remove("sticky");
+            }
+        }
+    </script>
+</body>
+</html>
